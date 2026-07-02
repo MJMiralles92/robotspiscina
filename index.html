@@ -3,590 +3,476 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Robots Piscina 2026 – Comparativas honestas sin humo | RobotsPiscinas.es</title>
-  <meta name="description" content="Comparativas reales de robots limpiafondos 2026. Sin frases vacías, sin fotos de stock. Te digo cuál compraría yo, cuál no, y por qué. Opiniones honestas para piscinas españolas." />
+  <title>RobotsPiscina.es – Comparativa Robots Limpiafondos 2026</title>
+  <meta name="description" content="Comparativa actualizada 2026 de los mejores robots limpiafondos. Analizamos Dolphin, Aiper, Wybot, Beatbot, iGarden y CoasTeering para ayudarte a elegir." />
+  <link rel="canonical" href="https://robotspiscina.es/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,600;9..40,700&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --navy: #0a1628; --blue: #1565c0; --blue-light: #1e88e5;
-      --aqua: #00b4d8; --aqua-light: #90e0ef; --gold: #f5a623;
-      --white: #fff; --off-white: #f7fafd; --gray-light: #e8f0fb;
-      --gray-mid: #b0bec5; --gray-text: #546e7a; --text: #1a2a3a;
-      --green: #2e7d32; --red: #c62828;
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --blue-deep:#002f55;--blue-mid:#0077b6;--blue-bright:#00b4d8;
+      --cyan:#90e0ef;--white:#f0f9ff;--text:#0d1b2a;--text-muted:#4a6585;
+      --gold:#f4a01c;--green:#2cb67d;--card-bg:#fff;--border:#cde8f5;--radius:16px;
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--off-white); overflow-x: hidden; }
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);line-height:1.6;overflow-x:hidden}
 
     /* NAV */
-    nav { position:sticky; top:0; z-index:100; background:rgba(10,22,40,.97); backdrop-filter:blur(8px); display:flex; align-items:center; justify-content:space-between; padding:0 2rem; height:64px; border-bottom:1px solid rgba(0,180,216,.2); }
-    .nav-logo { display:flex; align-items:center; gap:.6rem; text-decoration:none; }
-    .nav-logo-icon { width:36px; height:36px; background:linear-gradient(135deg,var(--aqua),var(--blue-light)); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:18px; }
-    .nav-logo-text { font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700; color:var(--white); }
-    .nav-tagline { font-size:.7rem; color:rgba(144,224,239,.6); letter-spacing:.06em; text-transform:uppercase; }
-    .nav-links { display:flex; gap:1.8rem; list-style:none; }
-    .nav-links a { color:var(--aqua-light); text-decoration:none; font-size:.88rem; font-weight:500; transition:color .2s; }
-    .nav-links a:hover { color:var(--white); }
+    nav{position:sticky;top:0;z-index:100;background:rgba(0,47,85,0.97);backdrop-filter:blur(12px);
+        display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:66px;
+        box-shadow:0 2px 20px rgba(0,0,0,0.3)}
+    .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--cyan);letter-spacing:1px;text-decoration:none}
+    .nav-logo span{color:var(--gold)}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{color:rgba(255,255,255,0.82);text-decoration:none;font-size:.9rem;font-weight:600;letter-spacing:.4px;transition:color .2s}
+    .nav-links a:hover{color:var(--cyan)}
 
     /* HERO */
-    .hero { position:relative; background:linear-gradient(160deg,var(--navy) 0%,#0d2137 50%,#0a3d5f 100%); padding:5rem 2rem 5rem; text-align:center; overflow:hidden; }
-    .hero::before { content:''; position:absolute; top:-50%; left:-20%; width:80%; height:200%; background:radial-gradient(ellipse,rgba(0,180,216,.12) 0%,transparent 70%); pointer-events:none; }
-    .hero::after { content:''; position:absolute; bottom:-1px; left:0; right:0; height:50px; background:var(--off-white); clip-path:ellipse(55% 100% at 50% 100%); }
+    .hero{position:relative;background:linear-gradient(155deg,var(--blue-deep) 0%,#005f9e 55%,var(--blue-bright) 100%);
+          min-height:86vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+          text-align:center;padding:6rem 2rem 5rem;overflow:hidden}
+    .hero::after{content:'';position:absolute;inset:0;
+          background:radial-gradient(ellipse at 75% 25%,rgba(144,224,239,.15) 0%,transparent 60%)}
+    .hero-badge{display:inline-block;position:relative;z-index:1;
+          background:rgba(255,255,255,.1);border:1px solid rgba(144,224,239,.35);
+          color:var(--cyan);font-size:.78rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;
+          padding:.4rem 1.3rem;border-radius:50px;margin-bottom:1.6rem;animation:fadeDown .6s ease both}
+    .hero h1{position:relative;z-index:1;font-family:'Bebas Neue',sans-serif;
+          font-size:clamp(3.2rem,9vw,7rem);color:#fff;line-height:1;letter-spacing:1px;
+          animation:fadeDown .6s ease .1s both}
+    .hero h1 em{color:var(--cyan);font-style:normal}
+    .hero p{position:relative;z-index:1;max-width:600px;margin:1.5rem auto 0;
+          color:rgba(255,255,255,.78);font-size:1.15rem;font-weight:300;animation:fadeDown .6s ease .2s both}
+    .hero-cta{position:relative;z-index:1;margin-top:2.5rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;animation:fadeDown .6s ease .3s both}
+    .btn{display:inline-block;padding:.9rem 2rem;border-radius:50px;font-weight:700;font-size:1rem;text-decoration:none;transition:transform .2s,box-shadow .2s;cursor:pointer;border:none}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.22)}
+    .btn-primary{background:var(--gold);color:var(--blue-deep)}
+    .btn-outline{background:transparent;border:2px solid rgba(255,255,255,.45);color:#fff}
+    .wave{position:absolute;bottom:-2px;left:0;right:0;height:80px}
+    .wave svg{display:block;width:100%;height:100%}
 
-    .hero-badge { display:inline-flex; align-items:center; gap:.4rem; background:rgba(0,180,216,.15); border:1px solid rgba(0,180,216,.35); color:var(--aqua-light); border-radius:100px; padding:.35rem 1rem; font-size:.78rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; margin-bottom:1.5rem; }
-    .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,5vw,3.6rem); font-weight:900; color:var(--white); line-height:1.15; max-width:760px; margin:0 auto 1rem; }
-    .hero h1 em { font-style:normal; color:var(--aqua); }
-    .hero-sub { font-size:1.05rem; color:var(--gray-mid); max-width:540px; margin:0 auto 1.5rem; line-height:1.7; }
-    .hero-honest { display:inline-block; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); border-radius:12px; padding:.7rem 1.4rem; font-size:.88rem; color:rgba(255,255,255,.7); margin-bottom:2.5rem; font-style:italic; }
-    .hero-cta { display:inline-flex; align-items:center; gap:.5rem; background:linear-gradient(135deg,var(--aqua),var(--blue-light)); color:var(--white); text-decoration:none; padding:.85rem 2.2rem; border-radius:50px; font-weight:600; font-size:1rem; box-shadow:0 8px 32px rgba(0,180,216,.35); transition:transform .2s,box-shadow .2s; }
-    .hero-cta:hover { transform:translateY(-2px); box-shadow:0 12px 40px rgba(0,180,216,.5); }
-    .hero-stats { display:flex; justify-content:center; gap:3rem; margin-top:3.5rem; padding:2rem 0 1.5rem; border-top:1px solid rgba(255,255,255,.08); position:relative; z-index:1; }
-    .stat strong { display:block; font-family:'Playfair Display',serif; font-size:1.8rem; font-weight:900; color:var(--aqua); }
-    .stat span { font-size:.78rem; color:var(--gray-mid); text-transform:uppercase; letter-spacing:.08em; }
+    /* STATS */
+    .stats-bar{background:var(--blue-deep);display:flex;justify-content:center;gap:4rem;flex-wrap:wrap;padding:2rem;text-align:center}
+    .stat-item{color:#fff}
+    .stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:var(--cyan);display:block;line-height:1}
+    .stat-label{font-size:.75rem;opacity:.65;letter-spacing:1.5px;text-transform:uppercase}
 
-    /* SECTIONS */
-    section { padding:4rem 2rem; }
-    .section-label { text-align:center; font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--blue-light); margin-bottom:.5rem; }
-    h2.section-title { font-family:'Playfair Display',serif; font-size:clamp(1.6rem,3vw,2.3rem); font-weight:900; text-align:center; color:var(--navy); margin-bottom:.7rem; }
-    .section-intro { text-align:center; color:var(--gray-text); font-size:.97rem; max-width:560px; margin:0 auto 3rem; line-height:1.7; }
+    /* LAYOUT */
+    section{padding:5rem 2rem}
+    .container{max-width:1140px;margin:0 auto}
+    .section-label{font-size:.75rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--blue-bright);margin-bottom:.6rem;display:block}
+    .section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);color:var(--blue-deep);line-height:1;margin-bottom:.7rem}
+    .section-title span{color:var(--blue-bright)}
+    .section-sub{color:var(--text-muted);font-size:1rem;margin-bottom:3rem;max-width:580px}
 
-    /* VEREDICTO RÁPIDO */
-    .veredicto-section { background:var(--white); }
-    .veredicto-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.2rem; max-width:1000px; margin:0 auto; }
-    .veredicto-card { border-radius:16px; padding:1.4rem 1.6rem; border:1px solid var(--gray-light); background:var(--off-white); }
-    .veredicto-card.winner { background:linear-gradient(135deg,#e8f4ff,#f0faff); border-color:var(--blue-light); border-width:2px; }
-    .veredicto-tag { font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em; margin-bottom:.6rem; display:inline-block; padding:.2rem .7rem; border-radius:100px; }
-    .tag-winner { background:#fff3e0; color:#e65100; }
-    .tag-budget { background:#e8f5e9; color:#2e7d32; }
-    .tag-wireless { background:#f3e5f5; color:#6a1b9a; }
-    .veredicto-img { width:100%; height:130px; object-fit:contain; background:white; border-radius:10px; padding:8px; margin:10px 0; }
-    .veredicto-name { font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700; color:var(--navy); margin-bottom:.3rem; }
-    .veredicto-verdict { font-size:.87rem; color:var(--gray-text); line-height:1.6; margin-bottom:.8rem; font-style:italic; }
-    .veredicto-price { font-size:1.3rem; font-weight:700; color:var(--blue); margin-bottom:.8rem; }
-    .btn-amazon { display:flex; align-items:center; justify-content:center; gap:.4rem; background:#FF9900; color:#111; text-decoration:none; padding:.7rem 1.2rem; border-radius:9px; font-weight:700; font-size:.88rem; transition:all .2s; }
-    .btn-amazon:hover { background:#e68900; transform:translateY(-1px); }
+    /* CARDS */
+    .picks-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.6rem}
+    .pick-card{background:var(--card-bg);border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden;
+               transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;display:flex;flex-direction:column}
+    .pick-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,119,182,.14);border-color:var(--blue-bright)}
+    .badge-wrap{position:absolute;top:14px;left:14px;display:flex;flex-direction:column;gap:5px;z-index:2}
+    .badge{display:inline-block;font-size:.67rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:.25rem .7rem;border-radius:50px}
+    .badge-best{background:var(--gold);color:var(--blue-deep)}
+    .badge-new{background:var(--green);color:#fff}
+    .badge-budget{background:#e0f2fe;color:var(--blue-mid)}
+    .badge-premium{background:var(--blue-deep);color:var(--cyan)}
+    .pick-img{width:100%;height:190px;background:linear-gradient(135deg,#e8f4fd,#cde8f5);display:flex;align-items:center;justify-content:center;font-size:5.5rem;padding:1rem}
+    .pick-body{padding:1.4rem;flex:1;display:flex;flex-direction:column}
+    .pick-brand{font-size:.73rem;font-weight:700;color:var(--blue-bright);text-transform:uppercase;letter-spacing:1.2px}
+    .pick-name{font-size:1.05rem;font-weight:700;margin:.3rem 0 .5rem;line-height:1.35;color:var(--blue-deep)}
+    .pick-stars{color:var(--gold);font-size:1rem;margin-bottom:.7rem}
+    .pick-stars span{color:var(--text-muted);font-size:.82rem;margin-left:.3rem;font-weight:400}
+    .pick-features{list-style:none;margin-bottom:1.2rem}
+    .pick-features li{font-size:.87rem;color:var(--text-muted);padding:.22rem 0;display:flex;align-items:flex-start;gap:.4rem}
+    .pick-features li::before{content:'✓';color:var(--blue-bright);font-weight:700;flex-shrink:0;margin-top:1px}
+    .pick-spec-bar{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
+    .spec-pill{background:#eaf6fb;color:var(--blue-mid);font-size:.75rem;font-weight:600;padding:.2rem .65rem;border-radius:50px}
+    .pick-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:1rem;border-top:1px solid var(--border)}
+    .pick-price{font-family:'Bebas Neue',sans-serif;font-size:1.9rem;color:var(--blue-deep)}
+    .pick-price small{font-family:'DM Sans',sans-serif;font-size:.8rem;color:var(--text-muted);font-weight:400}
+    .btn-amazon{background:var(--gold);color:var(--blue-deep);padding:.6rem 1.3rem;border-radius:50px;font-weight:700;font-size:.88rem;text-decoration:none;transition:background .2s,transform .15s;white-space:nowrap}
+    .btn-amazon:hover{background:#e08e00;transform:scale(1.04)}
 
-    /* HONEST BOX */
-    .honest-section { background:var(--navy); }
-    .honest-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; max-width:900px; margin:0 auto; }
-    .honest-card { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); border-radius:14px; padding:1.3rem; }
-    .honest-card .icon { font-size:1.8rem; margin-bottom:.6rem; }
-    .honest-card h3 { font-size:.95rem; font-weight:700; color:var(--white); margin-bottom:.4rem; }
-    .honest-card p { font-size:.83rem; color:var(--gray-mid); line-height:1.6; }
-    .honest-section .section-label { color:var(--aqua-light); }
-    .honest-section .section-title { color:var(--white); }
-    .honest-section .section-intro { color:var(--gray-mid); }
+    /* TABLA */
+    .compare-section{background:#f4f9fc}
+    .compare-wrap{overflow-x:auto;border-radius:var(--radius);box-shadow:0 4px 24px rgba(0,63,107,.1)}
+    table{width:100%;border-collapse:collapse;background:#fff;font-size:.9rem}
+    thead tr{background:var(--blue-deep);color:#fff}
+    th{padding:1rem 1.2rem;text-align:left;font-size:.78rem;letter-spacing:1px;text-transform:uppercase;font-weight:600}
+    td{padding:.9rem 1.2rem;border-bottom:1px solid var(--border);vertical-align:middle}
+    tr:last-child td{border-bottom:none}
+    tbody tr:hover{background:#f0f9ff}
+    .t-brand{font-weight:700;color:var(--blue-deep)}
+    .t-check{color:var(--green);font-size:1.1rem}
+    .t-no{color:#ccc;font-size:1.1rem}
+    .t-price{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--blue-mid)}
 
-    /* COMPARISON TABLE */
-    .comparison-section { background:var(--off-white); }
-    .table-wrap { max-width:1100px; margin:0 auto; overflow-x:auto; border-radius:16px; box-shadow:0 8px 40px rgba(0,0,0,.08); }
-    table { width:100%; border-collapse:collapse; background:var(--white); font-size:.88rem; }
-    thead tr { background:var(--navy); color:var(--white); }
-    thead th { padding:1rem 1.1rem; text-align:left; font-size:.78rem; text-transform:uppercase; letter-spacing:.07em; white-space:nowrap; }
-    thead th:first-child { border-radius:16px 0 0 0; }
-    thead th:last-child { border-radius:0 16px 0 0; }
-    tbody tr { border-bottom:1px solid var(--gray-light); transition:background .15s; }
-    tbody tr:hover { background:var(--gray-light); }
-    tbody tr:last-child { border:none; }
-    tbody td { padding:.9rem 1.1rem; vertical-align:middle; }
-    .td-product { display:flex; align-items:center; gap:.8rem; }
-    .product-img-sm { width:56px; height:48px; object-fit:contain; background:#f5f5f5; border-radius:7px; padding:4px; flex-shrink:0; }
-    .product-name { font-weight:700; color:var(--navy); font-size:.9rem; }
-    .product-sub { font-size:.74rem; color:var(--gray-text); }
-    .badge { display:inline-block; padding:.2rem .6rem; border-radius:100px; font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; }
-    .badge-top { background:#fff3e0; color:#e65100; }
-    .badge-eco { background:#e8f5e9; color:#2e7d32; }
-    .badge-pro { background:#e3f2fd; color:#1565c0; }
-    .badge-new { background:#f3e5f5; color:#6a1b9a; }
-    .stars { color:#FFB300; font-size:.88rem; }
-    .price-cell { font-weight:700; font-size:1rem; color:var(--blue); white-space:nowrap; }
-    .check { color:#43a047; font-size:1.05rem; }
-    .cross { color:#e53935; font-size:1.05rem; }
-    .btn-ver { display:inline-flex; align-items:center; gap:.3rem; background:#FF9900; color:#111; text-decoration:none; padding:.45rem 1rem; border-radius:7px; font-weight:700; font-size:.8rem; white-space:nowrap; transition:all .15s; }
-    .btn-ver:hover { background:#e68900; transform:translateY(-1px); }
+    /* HOW */
+    .how{background:linear-gradient(140deg,var(--blue-deep),#005080)}
+    .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:1rem}
+    .step{text-align:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:2rem 1.5rem}
+    .step-num{font-family:'Bebas Neue',sans-serif;font-size:4rem;color:var(--cyan);line-height:1;margin-bottom:.5rem}
+    .step h3{color:#fff;font-size:1rem;margin-bottom:.5rem}
+    .step p{color:rgba(255,255,255,.6);font-size:.88rem}
 
-    /* PRO / CON VISUAL */
-    .procon-section { background:var(--white); }
-    .procon-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.5rem; max-width:1000px; margin:0 auto; }
-    .procon-card { border-radius:16px; border:1px solid var(--gray-light); overflow:hidden; }
-    .procon-header { padding:1.2rem 1.5rem; display:flex; align-items:center; gap:.8rem; background:var(--off-white); border-bottom:1px solid var(--gray-light); }
-    .procon-img { width:60px; height:52px; object-fit:contain; background:white; border-radius:8px; padding:4px; }
-    .procon-header-info h3 { font-size:1rem; font-weight:700; color:var(--navy); }
-    .procon-header-info span { font-size:.8rem; color:var(--blue); font-weight:600; }
-    .procon-body { padding:1.2rem 1.5rem; display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
-    .procon-col h4 { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em; margin-bottom:.6rem; }
-    .procon-col.pros h4 { color:var(--green); }
-    .procon-col.cons h4 { color:var(--red); }
-    .procon-list { list-style:none; display:flex; flex-direction:column; gap:.4rem; }
-    .procon-list li { font-size:.83rem; line-height:1.5; display:flex; gap:.4rem; align-items:flex-start; }
-    .procon-col.pros li::before { content:'✓'; color:var(--green); font-weight:700; flex-shrink:0; }
-    .procon-col.cons li::before { content:'✗'; color:var(--red); font-weight:700; flex-shrink:0; }
-    .procon-footer { padding:.9rem 1.5rem; background:var(--off-white); border-top:1px solid var(--gray-light); }
-
-    /* PARA QUIEN ES */
-    .paraquien-section { background:var(--off-white); }
-    .paraquien-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.1rem; max-width:1000px; margin:0 auto; }
-    .paraquien-card { background:var(--white); border-radius:14px; padding:1.4rem; border-left:4px solid var(--blue-light); }
-    .paraquien-card .emoji { font-size:1.8rem; margin-bottom:.6rem; }
-    .paraquien-card h3 { font-size:.95rem; font-weight:700; color:var(--navy); margin-bottom:.3rem; }
-    .paraquien-card p { font-size:.85rem; color:var(--gray-text); line-height:1.6; }
-    .paraquien-card strong { color:var(--blue); }
+    /* GUIDE */
+    .guide{background:#fff}
+    .guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1rem}
+    @media(max-width:680px){.guide-grid{grid-template-columns:1fr}}
+    .guide-card{background:#f4f9fc;border-radius:var(--radius);border:1px solid var(--border);padding:1.8rem}
+    .guide-icon{font-size:2.2rem;margin-bottom:.8rem}
+    .guide-card h3{font-size:1.05rem;color:var(--blue-deep);margin-bottom:.4rem;font-weight:700}
+    .guide-card p{color:var(--text-muted);font-size:.9rem;line-height:1.7}
 
     /* FAQ */
-    .faq-section { background:var(--white); }
-    .faq-list { max-width:720px; margin:0 auto; display:flex; flex-direction:column; gap:.7rem; }
-    details { background:var(--off-white); border:1px solid var(--gray-light); border-radius:12px; overflow:hidden; }
-    summary { padding:1rem 1.4rem; font-weight:600; font-size:.93rem; color:var(--navy); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; }
-    summary::after { content:'+'; font-size:1.3rem; color:var(--blue-light); }
-    details[open] summary::after { content:'−'; }
-    details p { padding:0 1.4rem 1rem; font-size:.88rem; color:var(--gray-text); line-height:1.7; }
-
-    /* ARTICLES */
-    .articles-section { background:var(--off-white); }
-    .article-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.4rem; max-width:1000px; margin:0 auto; }
-    .article-card { background:var(--white); border:1px solid var(--gray-light); border-radius:16px; overflow:hidden; transition:transform .2s,box-shadow .2s; text-decoration:none; color:inherit; display:flex; flex-direction:column; }
-    .article-card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(0,0,0,.1); }
-    .article-card-img { background:linear-gradient(135deg,var(--navy),#0a3d5f); padding:1.8rem; display:flex; align-items:center; justify-content:center; font-size:2.8rem; }
-    .article-card-body { padding:1.3rem; display:flex; flex-direction:column; gap:.5rem; flex:1; }
-    .article-card-tag { font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--blue-light); }
-    .article-card-title { font-family:'Playfair Display',serif; font-size:1.05rem; font-weight:700; color:var(--navy); line-height:1.3; }
-    .article-card-desc { font-size:.85rem; color:var(--gray-text); line-height:1.6; }
-    .article-card-link { margin-top:auto; font-size:.83rem; font-weight:600; color:var(--blue-light); padding-top:.4rem; }
+    .faq{background:#f4f9fc}
+    .faq-list{max-width:780px;margin-top:1rem}
+    .faq-item{background:#fff;border-radius:10px;margin-bottom:.7rem;overflow:hidden;border:1px solid var(--border)}
+    .faq-q{font-weight:600;color:var(--blue-deep);cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:.97rem;padding:1.1rem 1.4rem}
+    .faq-q::after{content:'+';font-size:1.5rem;color:var(--blue-bright);transition:transform .25s;flex-shrink:0;margin-left:1rem}
+    .faq-item.open .faq-q::after{transform:rotate(45deg)}
+    .faq-a{color:var(--text-muted);font-size:.9rem;line-height:1.75;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s;padding:0 1.4rem}
+    .faq-item.open .faq-a{max-height:300px;padding:0 1.4rem 1.2rem}
 
     /* FOOTER */
-    footer { background:var(--navy); color:var(--gray-mid); text-align:center; padding:2.5rem 2rem; font-size:.82rem; line-height:1.8; }
-    footer a { color:var(--aqua-light); text-decoration:none; }
-    .footer-disclaimer { margin-top:1rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,.08); font-size:.74rem; color:rgba(255,255,255,.3); max-width:600px; margin-left:auto; margin-right:auto; }
+    footer{background:var(--blue-deep);color:rgba(255,255,255,.55);text-align:center;padding:3.5rem 2rem;font-size:.84rem;line-height:2.2}
+    footer strong{color:#fff;font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:1px;display:block;margin-bottom:.5rem}
+    footer a{color:var(--cyan);text-decoration:none}
+    .affiliate-notice{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:1rem 1.5rem;max-width:640px;margin:1.5rem auto 0;font-size:.8rem;line-height:1.6}
 
-    @media (max-width:680px) {
-      .hero-stats { gap:1.5rem; }
-      .nav-links { display:none; }
-      .procon-body { grid-template-columns:1fr; }
-    }
+    @keyframes fadeDown{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)}}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s ease}
+    .reveal.visible{opacity:1;transform:none}
+    @media(max-width:600px){.nav-links{display:none}.stats-bar{gap:1.5rem}}
   </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
-  <a href="index.html" class="nav-logo">
-    <div class="nav-logo-icon">🤖</div>
-    <div>
-      <div class="nav-logo-text">RobotsPiscinas.es</div>
-      <div class="nav-tagline">Comparativas sin humo</div>
-    </div>
-  </a>
+  <a class="nav-logo" href="#">🤖 Robots<span>Piscina</span></a>
   <ul class="nav-links">
-    <li><a href="#veredicto">Mi elección</a></li>
     <li><a href="#comparativa">Comparativa</a></li>
-    <li><a href="#procon">Pros y contras</a></li>
-    <li><a href="#articulos">Artículos</a></li>
+    <li><a href="#tabla">Tabla resumen</a></li>
+    <li><a href="#guia">Guía de compra</a></li>
+    <li><a href="#faq">FAQ</a></li>
   </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="hero-badge">✨ Actualizado mayo 2026</div>
-  <h1>Robots de piscina 2026:<br><em>comparativas honestas,</em> sin humo</h1>
-  <p class="hero-sub">He visto cientos de vídeos, leído miles de reseñas reales y analizado cada modelo. Aquí te digo cuál compraría yo, cuál no, y exactamente por qué.</p>
-  <div class="hero-honest">"La mayoría de webs te dicen que todo es 'excelente'. Aquí te cuento también lo malo."</div>
-  <a href="#veredicto" class="hero-cta">Ver mi selección honesta ↓</a>
-  <div class="hero-stats">
-    <div class="stat"><strong>6</strong><span>Modelos analizados</span></div>
-    <div class="stat"><strong>1.000+</strong><span>Reseñas leídas</span></div>
-    <div class="stat"><strong>0</strong><span>Patrocinios</span></div>
+  <div class="hero-badge">🏊 Guía actualizada junio 2026</div>
+  <h1>Los <em>mejores</em><br>robots para<br>tu piscina</h1>
+  <p>Comparamos los 6 robots limpiafondos más vendidos en Amazon España para que no pierdas ni un día de verano limpiando.</p>
+  <div class="hero-cta">
+    <a href="#comparativa" class="btn btn-primary">Ver comparativa →</a>
+    <a href="#guia" class="btn btn-outline">Guía de compra</a>
+  </div>
+  <div class="wave">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C300,80 900,0 1200,40 L1200,80 L0,80 Z" fill="#f0f9ff"/>
+    </svg>
   </div>
 </section>
 
-<!-- VEREDICTO RÁPIDO -->
-<section class="veredicto-section" id="veredicto">
-  <div class="section-label">Mi veredicto rápido</div>
-  <h2 class="section-title">Si solo tienes 30 segundos</h2>
-  <p class="section-intro">Sin leer nada más: estos son los tres robots que compraría según el presupuesto. Más abajo explico por qué.</p>
+<div class="stats-bar">
+  <div class="stat-item"><span class="stat-num">6</span><span class="stat-label">Modelos analizados</span></div>
+  <div class="stat-item"><span class="stat-num">2026</span><span class="stat-label">Guía actualizada</span></div>
+  <div class="stat-item"><span class="stat-num">100%</span><span class="stat-label">Reseñas reales</span></div>
+  <div class="stat-item"><span class="stat-num">0€</span><span class="stat-label">Coste para ti</span></div>
+</div>
 
-  <div class="veredicto-grid" style="max-width:1000px;margin:0 auto;">
+<!-- COMPARATIVA -->
+<section id="comparativa" style="background:var(--white)">
+  <div class="container">
+    <span class="section-label reveal">⭐ Selección 2026</span>
+    <h2 class="section-title reveal">Comparativa de <span>robots limpiafondos</span></h2>
+    <p class="section-sub reveal">Los 6 modelos más vendidos en Amazon España, analizados en detalle. Haz clic en "Ver en Amazon" para ver el precio actual.</p>
+    <div class="picks-grid">
 
-    <div class="veredicto-card winner">
-      <span class="veredicto-tag tag-winner">🏆 Lo compraría yo</span>
-      <img src="nautilis_cc_plus.jpg" alt="Dolphin Nautilus CC Plus" class="veredicto-img" />
-      <div class="veredicto-name">Dolphin Nautilus CC Plus</div>
-      <div class="veredicto-verdict">"El más vendido por algo. Filtración ultrafina, cable anti-enredo y 2,5 años de garantía. Para quien quiere comprar una vez y olvidarse."</div>
-      <div class="veredicto-price">~599 €</div>
-      <a href="https://www.amazon.es/s?k=Dolphin+Nautilus+CC+Plus&tag=mjmiralles92-21" class="btn-amazon" target="_blank" rel="noopener">🛒 Ver precio en Amazon →</a>
+      <div class="pick-card reveal">
+        <div class="badge-wrap"><span class="badge badge-best">⭐ Más Vendido</span></div>
+        <div class="pick-img">🐬</div>
+        <div class="pick-body">
+          <div class="pick-brand">Dolphin · Maytronics</div>
+          <div class="pick-name">Dolphin Carrera 40i</div>
+          <div class="pick-stars">★★★★★ <span>(+2.400 reseñas)</span></div>
+          <div class="pick-spec-bar">
+            <span class="spec-pill">🔌 Con cable</span>
+            <span class="spec-pill">📏 Hasta 12m</span>
+            <span class="spec-pill">📱 App WiFi</span>
+          </div>
+          <ul class="pick-features">
+            <li>Limpia fondo, paredes y línea de flotación</li>
+            <li>Tecnología PowerStream multidireccional</li>
+            <li>Control por app MyDolphin Plus</li>
+            <li>Filtración multicapa de partículas ultrafinas</li>
+          </ul>
+          <div class="pick-footer">
+            <div class="pick-price">Ver precio <small>en Amazon</small></div>
+            <a class="btn-amazon" href="https://amzn.to/3QbZt0Z" target="_blank" rel="noopener sponsored">Ver en Amazon →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pick-card reveal">
+        <div class="badge-wrap"><span class="badge badge-new">✨ 2025 Mejorado</span></div>
+        <div class="pick-img">🤖</div>
+        <div class="pick-body">
+          <div class="pick-brand">Aiper</div>
+          <div class="pick-name">Aiper Scuba S1</div>
+          <div class="pick-stars">★★★★½ <span>(+900 reseñas)</span></div>
+          <div class="pick-spec-bar">
+            <span class="spec-pill">🔋 Sin cable</span>
+            <span class="spec-pill">⏱ 180 min</span>
+            <span class="spec-pill">📱 App</span>
+          </div>
+          <ul class="pick-features">
+            <li>Inalámbrico con 180 min de autonomía</li>
+            <li>Limpia fondo, paredes y línea de flotación</li>
+            <li>Filtro ultrafino adicional de 3 micras</li>
+            <li>Navegación inteligente WavePath 2.0</li>
+          </ul>
+          <div class="pick-footer">
+            <div class="pick-price">Ver precio <small>en Amazon</small></div>
+            <a class="btn-amazon" href="https://amzn.to/4fyhlxE" target="_blank" rel="noopener sponsored">Ver en Amazon →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pick-card reveal">
+        <div class="badge-wrap"><span class="badge badge-premium">🏆 Gama Alta</span></div>
+        <div class="pick-img">🤖</div>
+        <div class="pick-body">
+          <div class="pick-brand">Wybot</div>
+          <div class="pick-name">Wybot C1</div>
+          <div class="pick-stars">★★★★★ <span>(+1.100 reseñas)</span></div>
+          <div class="pick-spec-bar">
+            <span class="spec-pill">🔋 Sin cable</span>
+            <span class="spec-pill">⏱ 150 min</span>
+            <span class="spec-pill">📐 150 m²</span>
+          </div>
+          <ul class="pick-features">
+            <li>Triple motor de alta potencia</li>
+            <li>Planificación inteligente de rutas por app</li>
+            <li>Limpia fondo, paredes y línea de agua</li>
+            <li>Para piscinas de hasta 150 m²</li>
+          </ul>
+          <div class="pick-footer">
+            <div class="pick-price">Ver precio <small>en Amazon</small></div>
+            <a class="btn-amazon" href="https://amzn.to/4uH69CN" target="_blank" rel="noopener sponsored">Ver en Amazon →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pick-card reveal">
+        <div class="badge-wrap"><span class="badge badge-premium">💎 Top Tecnología</span></div>
+        <div class="pick-img">🚀</div>
+        <div class="pick-body">
+          <div class="pick-brand">Beatbot</div>
+          <div class="pick-name">Beatbot AquaSense 2</div>
+          <div class="pick-stars">★★★★★ <span>(+600 reseñas)</span></div>
+          <div class="pick-spec-bar">
+            <span class="spec-pill">🔋 Sin cable</span>
+            <span class="spec-pill">⏱ 4 horas</span>
+            <span class="spec-pill">📐 300 m²</span>
+          </div>
+          <ul class="pick-features">
+            <li>Limpieza 3 en 1: fondo, paredes y superficie</li>
+            <li>Batería 10.000 mAh — hasta 4h continuas</li>
+            <li>Aparcamiento inteligente en superficie</li>
+            <li>Navegación CleverNav™ de cobertura total</li>
+          </ul>
+          <div class="pick-footer">
+            <div class="pick-price">Ver precio <small>en Amazon</small></div>
+            <a class="btn-amazon" href="https://amzn.to/4euLEUH" target="_blank" rel="noopener sponsored">Ver en Amazon →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pick-card reveal">
+        <div class="badge-wrap"><span class="badge badge-new">🆕 2026</span></div>
+        <div class="pick-img">🌿</div>
+        <div class="pick-body">
+          <div class="pick-brand">iGarden</div>
+          <div class="pick-name">iGarden K60 2026</div>
+          <div class="pick-stars">★★★★½ <span>(reseñas recientes)</span></div>
+          <div class="pick-spec-bar">
+            <span class="spec-pill">🔋 Sin cable</span>
+            <span class="spec-pill">⏱ 6 horas</span>
+            <span class="spec-pill">📱 App + IA</span>
+          </div>
+          <ul class="pick-features">
+            <li>Autonomía líder: hasta 6 horas seguidas</li>
+            <li>Doble filtración de alta eficiencia</li>
+            <li>Limpia fondo, paredes y línea de flotación</li>
+            <li>Planificación IA con temporizador 24/48/72h</li>
+          </ul>
+          <div class="pick-footer">
+            <div class="pick-price">Ver precio <small>en Amazon</small></div>
+            <a class="btn-amazon" href="https://amzn.to/3RRmqHu" target="_blank" rel="noopener sponsored">Ver en Amazon →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pick-card reveal">
+        <div class="badge-wrap"><span class="badge badge-budget">💰 Mejor Precio</span></div>
+        <div class="pick-img">🌊</div>
+        <div class="pick-body">
+          <div class="pick-brand">CoasTeering</div>
+          <div class="pick-name">CoasTeering Planet Pro</div>
+          <div class="pick-stars">★★★★☆ <span>(+800 reseñas)</span></div>
+          <div class="pick-spec-bar">
+            <span class="spec-pill">🔋 Sin cable</span>
+            <span class="spec-pill">⏱ 120 min</span>
+            <span class="spec-pill">📐 120 m²</span>
+          </div>
+          <ul class="pick-features">
+            <li>Doble motor sin escobillas — vida útil 3x mayor</li>
+            <li>2 boquillas de succión de alta potencia</li>
+            <li>Carga rápida en solo 2,5 horas</li>
+            <li>Ideal para piscinas elevadas y desmontables</li>
+          </ul>
+          <div class="pick-footer">
+            <div class="pick-price">Ver precio <small>en Amazon</small></div>
+            <a class="btn-amazon" href="https://amzn.to/4unrIbc" target="_blank" rel="noopener sponsored">Ver en Amazon →</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-
-    <div class="veredicto-card">
-      <span class="veredicto-tag tag-wireless">🔋 Sin cable</span>
-      <img src="aiper_scuba_s1.jpg" alt="Aiper Scuba S1" class="veredicto-img" />
-      <div class="veredicto-name">Aiper Scuba S1 2025</div>
-      <div class="veredicto-verdict">"180 minutos de batería, filtración de 3 micras y app incluida. Si odias los cables, este es tu robot. La filtración es mejor que muchos modelos con cable."</div>
-      <div class="veredicto-price">~349 €</div>
-      <a href="https://www.amazon.es/s?k=Aiper+Scuba+S1+2025&tag=mjmiralles92-21" class="btn-amazon" target="_blank" rel="noopener">🛒 Ver precio en Amazon →</a>
-    </div>
-
-    <div class="veredicto-card">
-      <span class="veredicto-tag tag-budget">💸 Ajustado</span>
-      <img src="wybot_c1.jpg" alt="WYBOT C1" class="veredicto-img" />
-      <div class="veredicto-name">WYBOT C1</div>
-      <div class="veredicto-verdict">"Por menos de 250€ tienes un robot sin cable que sube paredes. Hace dos años esto no existía en este precio. Sin app ni filtración fina, pero limpia bien."</div>
-      <div class="veredicto-price">~249 €</div>
-      <a href="https://www.amazon.es/s?k=WYBOT+C1+robot+piscina&tag=mjmiralles92-21" class="btn-amazon" target="_blank" rel="noopener">🛒 Ver precio en Amazon →</a>
-    </div>
-
+    <p style="margin-top:1.5rem;font-size:.78rem;color:var(--text-muted)">
+      * Los precios varían con frecuencia en Amazon. Haz clic en "Ver en Amazon" para ver el precio actual. Como afiliados obtenemos una pequeña comisión sin coste adicional para ti.
+    </p>
   </div>
 </section>
 
-<!-- HONEST SECTION -->
-<section class="honest-section">
-  <div class="section-label" style="color:var(--aqua-light);">Por qué esta web es diferente</div>
-  <h2 class="section-title" style="color:var(--white);">Lo que no encontrarás aquí</h2>
-  <p class="section-intro" style="color:var(--gray-mid);">Hay cientos de webs con "Top 10 mejores robots 2026". Esta no es una de ellas.</p>
-
-  <div class="honest-grid">
-    <div class="honest-card">
-      <div class="icon">🚫</div>
-      <h3>Sin frases vacías</h3>
-      <p>Nada de "potente succión para una limpieza excepcional". Si no puedo explicar exactamente por qué algo es bueno, no lo escribo.</p>
-    </div>
-    <div class="honest-card">
-      <div class="icon">✅</div>
-      <h3>Te digo lo malo</h3>
-      <p>Todos los robots tienen inconvenientes. Si solo ves ventajas en una reseña, te están vendiendo algo. Aquí aparece lo malo también.</p>
-    </div>
-    <div class="honest-card">
-      <div class="icon">🎯</div>
-      <h3>Sin modelo para todo</h3>
-      <p>No existe "el mejor robot". Existe el mejor para tu piscina, tu presupuesto y tu forma de usarlo. Eso es lo que intento responder.</p>
-    </div>
-    <div class="honest-card">
-      <div class="icon">💡</div>
-      <h3>Trucos reales</h3>
-      <p>Como meter el robot lateralmente para que se hunda bien, o cambiar el lateral de entrada para cubrir ese 5% que siempre queda igual.</p>
+<!-- TABLA -->
+<section class="compare-section" id="tabla">
+  <div class="container">
+    <span class="section-label reveal">📊 De un vistazo</span>
+    <h2 class="section-title reveal">Tabla <span>comparativa</span></h2>
+    <p class="section-sub reveal">Encuentra el modelo que mejor se adapta a tu piscina y presupuesto.</p>
+    <div class="compare-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Modelo</th><th>Cable</th><th>Autonomía</th><th>Paredes</th><th>App</th><th>Tipo piscina</th><th>Precio aprox.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="t-brand">Dolphin Carrera 40i</td><td>Con cable</td><td>Ilimitada</td><td class="t-check">✔</td><td class="t-check">✔</td><td>Enterrada &lt;12m</td><td class="t-price">~350€</td></tr>
+          <tr><td class="t-brand">Aiper Scuba S1</td><td>Sin cable</td><td>180 min</td><td class="t-check">✔</td><td class="t-check">✔</td><td>Hasta 15m</td><td class="t-price">~450€</td></tr>
+          <tr><td class="t-brand">Wybot C1</td><td>Sin cable</td><td>150 min</td><td class="t-check">✔</td><td class="t-check">✔</td><td>Hasta 150 m²</td><td class="t-price">~500€</td></tr>
+          <tr><td class="t-brand">Beatbot AquaSense 2</td><td>Sin cable</td><td>4 horas</td><td class="t-check">✔</td><td class="t-check">✔</td><td>Hasta 300 m²</td><td class="t-price">~650€</td></tr>
+          <tr><td class="t-brand">iGarden K60 2026</td><td>Sin cable</td><td>6 horas</td><td class="t-check">✔</td><td class="t-check">✔</td><td>Enterrada y elevada</td><td class="t-price">~500€</td></tr>
+          <tr><td class="t-brand">CoasTeering Planet Pro</td><td>Sin cable</td><td>120 min</td><td class="t-no">✗</td><td class="t-no">✗</td><td>Elevada &lt;120 m²</td><td class="t-price">~100€</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
-<!-- COMPARISON TABLE -->
-<section class="comparison-section" id="comparativa">
-  <div class="section-label">Tabla comparativa</div>
-  <h2 class="section-title">Comparativa completa 2026</h2>
-  <p class="section-intro">Todos los datos en un vistazo. Sin specs inventadas — solo lo que realmente importa antes de comprar.</p>
-
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Modelo</th>
-          <th>Precio</th>
-          <th>Tipo</th>
-          <th>Piscina máx.</th>
-          <th>Paredes</th>
-          <th>Autonomía</th>
-          <th>App</th>
-          <th>Valoración</th>
-          <th>Ver oferta</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><div class="td-product"><img class="product-img-sm" src="nautilis_cc_plus.jpg" alt="Dolphin Nautilus CC Plus"><div><div class="product-name">Dolphin Nautilus CC Plus</div><div class="product-sub">Con cable · Enterradas</div></div></div></td>
-          <td class="price-cell">~599 €</td>
-          <td><span class="badge badge-pro">Cable</span></td>
-          <td>12 m</td>
-          <td><span class="check">✔</span></td>
-          <td>Sin límite</td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="stars">★★★★★</span> 4.7</td>
-          <td><a href="https://www.amazon.es/s?k=Dolphin+Nautilus+CC+Plus&tag=mjmiralles92-21" class="btn-ver" target="_blank" rel="noopener">Ver →</a></td>
-        </tr>
-        <tr>
-          <td><div class="td-product"><img class="product-img-sm" src="aiper_scuba_s1.jpg" alt="Aiper Scuba S1"><div><div class="product-name">Aiper Scuba S1 2025</div><div class="product-sub">Sin cable · Enterradas</div></div></div></td>
-          <td class="price-cell">~349 €</td>
-          <td><span class="badge badge-new">Batería</span></td>
-          <td>150 m²</td>
-          <td><span class="check">✔</span></td>
-          <td>180 min</td>
-          <td><span class="check">✔</span></td>
-          <td><span class="stars">★★★★★</span> 4.5</td>
-          <td><a href="https://www.amazon.es/s?k=Aiper+Scuba+S1+2025&tag=mjmiralles92-21" class="btn-ver" target="_blank" rel="noopener">Ver →</a></td>
-        </tr>
-        <tr>
-          <td><div class="td-product"><img class="product-img-sm" src="wybot_c1.jpg" alt="WYBOT C1"><div><div class="product-name">WYBOT C1</div><div class="product-sub">Sin cable · Enterradas</div></div></div></td>
-          <td class="price-cell">~249 €</td>
-          <td><span class="badge badge-new">Batería</span></td>
-          <td>150 m²</td>
-          <td><span class="check">✔</span></td>
-          <td>150 min</td>
-          <td><span class="check">✔</span></td>
-          <td><span class="stars">★★★★☆</span> 4.4</td>
-          <td><a href="https://www.amazon.es/s?k=WYBOT+C1+robot+piscina&tag=mjmiralles92-21" class="btn-ver" target="_blank" rel="noopener">Ver →</a></td>
-        </tr>
-        <tr>
-          <td><div class="td-product"><img class="product-img-sm" src="Beatbot_AquaSense_2.jpg" alt="Beatbot AquaSense 2"><div><div class="product-name">Beatbot AquaSense 2</div><div class="product-sub">Sin cable · Premium</div></div></div></td>
-          <td class="price-cell">~599 €</td>
-          <td><span class="badge badge-new">Batería</span></td>
-          <td>200 m²</td>
-          <td><span class="check">✔</span></td>
-          <td>120 min</td>
-          <td><span class="check">✔</span></td>
-          <td><span class="stars">★★★★★</span> 4.6</td>
-          <td><a href="https://www.amazon.es/s?k=Beatbot+AquaSense+2&tag=mjmiralles92-21" class="btn-ver" target="_blank" rel="noopener">Ver →</a></td>
-        </tr>
-        <tr>
-          <td><div class="td-product"><img class="product-img-sm" src="iGarden_K_Robot.jpg" alt="iGarden K60"><div><div class="product-name">iGarden K60 2026</div><div class="product-sub">Sin cable · 6h batería</div></div></div></td>
-          <td class="price-cell">~399 €</td>
-          <td><span class="badge badge-new">Batería</span></td>
-          <td>180 m²</td>
-          <td><span class="check">✔</span></td>
-          <td>360 min</td>
-          <td><span class="check">✔</span></td>
-          <td><span class="stars">★★★★★</span> 4.5</td>
-          <td><a href="https://www.amazon.es/s?k=iGarden+K60+robot+piscina&tag=mjmiralles92-21" class="btn-ver" target="_blank" rel="noopener">Ver →</a></td>
-        </tr>
-        <tr>
-          <td><div class="td-product"><img class="product-img-sm" src="Coasteering_Planet_Pro.jpg" alt="CoasTeering Planet Pro"><div><div class="product-name">CoasTeering Planet Pro</div><div class="product-sub">Sin cable · Económico</div></div></div></td>
-          <td class="price-cell">~180 €</td>
-          <td><span class="badge badge-new">Batería</span></td>
-          <td>120 m²</td>
-          <td><span class="cross">✗</span></td>
-          <td>120 min</td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="stars">★★★★☆</span> 4.2</td>
-          <td><a href="https://www.amazon.es/s?k=CoasTeering+Planet+Pro&tag=mjmiralles92-21" class="btn-ver" target="_blank" rel="noopener">Ver →</a></td>
-        </tr>
-      </tbody>
-    </table>
+<!-- HOW -->
+<section class="how">
+  <div class="container">
+    <span class="section-label reveal" style="color:var(--cyan)">⚙️ Funcionamiento</span>
+    <h2 class="section-title reveal" style="color:#fff">¿Cómo funciona<br><span style="color:var(--cyan)">un robot limpiafondos?</span></h2>
+    <p class="section-sub reveal" style="color:rgba(255,255,255,.65)">Cuatro pasos que hacen el trabajo sucio por ti.</p>
+    <div class="steps">
+      <div class="step reveal"><div class="step-num">01</div><h3>Se sumerge solo</h3><p>Introduces el robot y empieza su ciclo de forma autónoma, sin que tengas que hacer nada más.</p></div>
+      <div class="step reveal"><div class="step-num">02</div><h3>Cepilla y aspira</h3><p>Los cepillos desprenden suciedad de fondo y paredes mientras el sistema de succión la recoge.</p></div>
+      <div class="step reveal"><div class="step-num">03</div><h3>Filtra el agua</h3><p>El filtro retiene arena, hojas, insectos y algas, devolviendo el agua limpia a la piscina.</p></div>
+      <div class="step reveal"><div class="step-num">04</div><h3>Termina solo</h3><p>Al finalizar el ciclo se detiene o aparca en superficie. Solo tienes que sacarlo y vaciarlo.</p></div>
+    </div>
   </div>
 </section>
 
-<!-- PROS Y CONTRAS -->
-<section class="procon-section" id="procon">
-  <div class="section-label">Lo bueno y lo malo</div>
-  <h2 class="section-title">Pros y contras reales</h2>
-  <p class="section-intro">Esto es lo que ninguna web de afiliados te cuenta. Aquí aparece lo malo también.</p>
-
-  <div class="procon-grid" style="max-width:1000px;margin:0 auto;">
-
-    <div class="procon-card">
-      <div class="procon-header">
-        <img src="nautilis_cc_plus.jpg" alt="Dolphin Nautilus CC Plus" class="procon-img">
-        <div class="procon-header-info">
-          <h3>Dolphin Nautilus CC Plus</h3>
-          <span>~599 € · Con cable</span>
-        </div>
+<!-- GUÍA -->
+<section class="guide" id="guia">
+  <div class="container">
+    <span class="section-label reveal">📖 Antes de comprar</span>
+    <h2 class="section-title reveal">Guía de <span>compra</span></h2>
+    <p class="section-sub reveal">Cuatro factores clave que debes tener claros antes de decidirte.</p>
+    <div class="guide-grid">
+      <div class="guide-card reveal">
+        <div class="guide-icon">📏</div>
+        <h3>Tamaño de tu piscina</h3>
+        <p>Para piscinas desmontables pequeñas, el CoasTeering es suficiente. De 8–15m, el Aiper o Dolphin. Para piscinas grandes de más de 15m o 150 m², el Beatbot AquaSense 2 o iGarden K60 son tu opción.</p>
       </div>
-      <div class="procon-body">
-        <div class="procon-col pros">
-          <h4>Lo bueno</h4>
-          <ul class="procon-list">
-            <li>Filtración de 50 micras — captura hasta el polen</li>
-            <li>Cable anti-enredo con swivel giratorio</li>
-            <li>2,5 años de garantía — la mejor del mercado</li>
-            <li>Nunca se queda sin batería</li>
-          </ul>
-        </div>
-        <div class="procon-col cons">
-          <h4>Lo malo</h4>
-          <ul class="procon-list">
-            <li>Necesitas enchufe cerca del agua</li>
-            <li>El cable puede molestar al nadar</li>
-            <li>No limpia la línea de flotación</li>
-            <li>Precio elevado</li>
-          </ul>
-        </div>
+      <div class="guide-card reveal">
+        <div class="guide-icon">🔋</div>
+        <h3>Cable vs sin cable</h3>
+        <p>Los robots con cable como el Dolphin tienen autonomía ilimitada pero menos libertad de movimiento. Los inalámbricos son más cómodos, pero revisa bien la autonomía según el tamaño de tu piscina antes de comprar.</p>
       </div>
-      <div class="procon-footer">
-        <a href="https://www.amazon.es/s?k=Dolphin+Nautilus+CC+Plus&tag=mjmiralles92-21" class="btn-amazon" target="_blank" rel="noopener">🛒 Ver en Amazon →</a>
+      <div class="guide-card reveal">
+        <div class="guide-icon">🏗️</div>
+        <h3>Tipo de piscina</h3>
+        <p>Las piscinas enterradas admiten cualquier modelo. Las desmontables o elevadas necesitan robots específicos como el CoasTeering, diseñado para fondos planos sin esquinas pronunciadas.</p>
       </div>
-    </div>
-
-    <div class="procon-card">
-      <div class="procon-header">
-        <img src="aiper_scuba_s1.jpg" alt="Aiper Scuba S1" class="procon-img">
-        <div class="procon-header-info">
-          <h3>Aiper Scuba S1 2025</h3>
-          <span>~349 € · Sin cable</span>
-        </div>
+      <div class="guide-card reveal">
+        <div class="guide-icon">💰</div>
+        <h3>Presupuesto</h3>
+        <p>Menos de 150€: CoasTeering para piscinas pequeñas. De 300–500€: Dolphin, Aiper o Wybot, la mejor relación calidad-precio. Más de 500€: Beatbot o iGarden K60, para quien quiere lo mejor sin compromiso.</p>
       </div>
-      <div class="procon-body">
-        <div class="procon-col pros">
-          <h4>Lo bueno</h4>
-          <ul class="procon-list">
-            <li>Filtración de 3 micras — mejor que muchos con cable</li>
-            <li>180 min de autonomía real</li>
-            <li>Limpia paredes y línea de flotación</li>
-            <li>App funciona muy bien</li>
-          </ul>
-        </div>
-        <div class="procon-col cons">
-          <h4>Lo malo</h4>
-          <ul class="procon-list">
-            <li>La batería se degrada con los años</li>
-            <li>~4 horas de carga</li>
-            <li>Más caro que rivales similares</li>
-            <li>Sin carga inalámbrica</li>
-          </ul>
-        </div>
-      </div>
-      <div class="procon-footer">
-        <a href="https://www.amazon.es/s?k=Aiper+Scuba+S1+2025&tag=mjmiralles92-21" class="btn-amazon" target="_blank" rel="noopener">🛒 Ver en Amazon →</a>
-      </div>
-    </div>
-
-    <div class="procon-card">
-      <div class="procon-header">
-        <img src="wybot_c1.jpg" alt="WYBOT C1" class="procon-img">
-        <div class="procon-header-info">
-          <h3>WYBOT C1</h3>
-          <span>~249 € · Sin cable</span>
-        </div>
-      </div>
-      <div class="procon-body">
-        <div class="procon-col pros">
-          <h4>Lo bueno</h4>
-          <ul class="procon-list">
-            <li>Precio muy competitivo</li>
-            <li>Sube paredes — raro a este precio</li>
-            <li>150 min de autonomía</li>
-            <li>Ligero y fácil de sacar</li>
-          </ul>
-        </div>
-        <div class="procon-col cons">
-          <h4>Lo malo</h4>
-          <ul class="procon-list">
-            <li>Filtración de 180 micras — deja pasar el polvo fino</li>
-            <li>No limpia línea de flotación</li>
-            <li>Solo 1 año de garantía</li>
-            <li>Marca con menos historial</li>
-          </ul>
-        </div>
-      </div>
-      <div class="procon-footer">
-        <a href="https://www.amazon.es/s?k=WYBOT+C1+robot+piscina&tag=mjmiralles92-21" class="btn-amazon" target="_blank" rel="noopener">🛒 Ver en Amazon →</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- PARA QUIÉN ES CADA UNO -->
-<section class="paraquien-section" id="paraquien">
-  <div class="section-label">Guía rápida</div>
-  <h2 class="section-title">¿Cuál es el tuyo?</h2>
-  <p class="section-intro">Según tu situación, uno tiene más sentido que otro. Sin rodeos.</p>
-
-  <div class="paraquien-grid">
-    <div class="paraquien-card">
-      <div class="emoji">🏊</div>
-      <h3>Piscina enterrada estándar</h3>
-      <p>Sin duda el <strong>Dolphin Nautilus CC Plus</strong>. Fiable, con buena garantía y filtración ultrafina. Para quien quiere comprar una vez y no pensar más.</p>
-    </div>
-    <div class="paraquien-card">
-      <div class="emoji">🔋</div>
-      <h3>Odio los cables</h3>
-      <p>El <strong>Aiper Scuba S1</strong>. 180 minutos sin cable, app y filtración que sorprende. Es el robot sin cable que más recomendaría por debajo de 400€.</p>
-    </div>
-    <div class="paraquien-card">
-      <div class="emoji">💸</div>
-      <h3>Presupuesto ajustado</h3>
-      <p>El <strong>WYBOT C1</strong> por menos de 250€. Sube paredes, no tiene cables y limpia bien. Para una primera compra o piscina estacional es una ganga.</p>
-    </div>
-    <div class="paraquien-card">
-      <div class="emoji">⏱️</div>
-      <h3>Piscina grande, necesito autonomía</h3>
-      <p>El <strong>iGarden K60</strong>. 6 horas de batería, ningún rival se acerca. Para piscinas de más de 150 m² donde otros robots se quedan cortos.</p>
-    </div>
-    <div class="paraquien-card">
-      <div class="emoji">🌙</div>
-      <h3>Quiero que limpie de noche</h3>
-      <p>El <strong>Aiper Scuba S1</strong> o el <strong>iGarden K60</strong>. Ambos tienen temporizador desde app. Programas la hora, te vas a dormir y la piscina está lista al levantarte.</p>
-    </div>
-    <div class="paraquien-card">
-      <div class="emoji">🏖️</div>
-      <h3>Piscina desmontable</h3>
-      <p>El <strong>iGarden K60</strong> o el <strong>WYBOT C1</strong>. Son los que mejor se adaptan a paredes de PVC rígido. Evita los modelos con ventosas para gresite.</p>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="faq-section" id="faq">
-  <div class="section-label">Preguntas reales</div>
-  <h2 class="section-title">Lo que todo el mundo pregunta</h2>
-  <p class="section-intro">Las dudas que aparecen siempre antes de comprar. Respuestas directas, sin dar rodeos.</p>
-
-  <div class="faq-list">
-    <details>
-      <summary>¿Se puede bañar mientras el robot está limpiando?</summary>
-      <p>Técnicamente no muerde — pero tampoco es lo ideal. Los robots hacen un mapeo del fondo y las paredes, pero la mayoría no tienen sensores para detectar si alguien está nadando. Una patada accidental puede descuadrarlo o dañar las ruedas. Lo mejor es esperar a que termine su ciclo (1,5-3 horas) y entonces darse el chapuzón con la piscina reluciente.</p>
-    </details>
-    <details>
-      <summary>¿Limpia también las paredes y la línea de flotación?</summary>
-      <p>Depende del modelo. Los básicos solo limpian el fondo. Los de gama media (WYBOT C1, Aiper Scuba S1) suben por las paredes. Solo los más completos llegan a la línea de flotación — esa franja donde se acumula la cal y el bronceador. Comprueba siempre este dato antes de comprar.</p>
-    </details>
-    <details>
-      <summary>¿Y si mi piscina es redonda o tiene formas irregulares?</summary>
-      <p>Los robots modernos con navegación inteligente se adaptan bastante bien a formas irregulares. En piscinas rectangulares son más eficientes, pero en redondas o con curvas el algoritmo ajusta el recorrido. En piscinas muy asimétricas siempre quedará algún rincón que no alcance — no es un defecto, es geometría.</p>
-    </details>
-    <details>
-      <summary>¿Qué pasa con los escalones?</summary>
-      <p>Los escalones son el talón de Aquiles de casi todos los robots. La mayoría los bordean en lugar de subirlos. La solución práctica: pasar el cepillo manual por los escalones una vez a la semana y dejar que el robot haga el 95% del trabajo. No es tan dramático — los escalones son una superficie pequeña comparada con el resto de la piscina.</p>
-    </details>
-    <details>
-      <summary>¿Cada cuánto hay que limpiar el filtro?</summary>
-      <p>Después de cada uso, antes de que la suciedad se seque. El proceso lleva menos de 3 minutos: abres la tapa, sacas el cartucho, lo aclaras con la manguera y listo. Si un día no puedes, déjalo dentro del agua en lugar de sacarlo — el agua evita que la suciedad se seque en el filtro. Eso sí, no más de 2-3 días sumergido sin usarlo.</p>
-    </details>
-    <details>
-      <summary>¿Cómo se mete correctamente en el agua?</summary>
-      <p>No lo tires desde arriba. Introdúcelo lateralmente para que el aire vaya saliendo poco a poco y se hunda de forma controlada. Y cada vez que lo uses, mételo desde un lateral diferente — los robots limpian el 95% de la piscina por ciclo, y si siempre entras por el mismo sitio, siempre dejas el mismo 5% sin limpiar.</p>
-    </details>
+<section class="faq" id="faq">
+  <div class="container">
+    <span class="section-label reveal">❓ Dudas frecuentes</span>
+    <h2 class="section-title reveal">Preguntas <span>frecuentes</span></h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">¿Cuántas veces a la semana debo usar el robot?</div>
+        <div class="faq-a">En temporada alta (junio–septiembre) lo ideal es 3–4 veces por semana. En primavera y otoño, con 1–2 veces es suficiente para mantener el agua en buen estado.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿El robot sustituye al tratamiento químico del agua?</div>
+        <div class="faq-a">No. El robot elimina la suciedad física (arena, hojas, algas visibles), pero el cloro y el equilibrio del pH son imprescindibles. Con un buen robot necesitarás menos productos, pero no podrás eliminarlos.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Puedo dejar el robot en el agua toda la noche?</div>
+        <div class="faq-a">No se recomienda. Una vez terminado el ciclo, es mejor sacarlo para prolongar la vida de la batería y los componentes electrónicos. Guárdalo en un lugar fresco y seco.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Cuál es la diferencia entre el Aiper Scuba S1 y el Wybot C1?</div>
+        <div class="faq-a">Ambos son inalámbricos y limpian paredes. El Aiper destaca por mayor autonomía (180 min) y filtro más fino (3 micras). El Wybot C1 tiene triple motor y planificación de rutas más avanzada. Para autonomía y filtración, el Aiper; para piscinas grandes con ruta optimizada, el Wybot.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿El Beatbot AquaSense 2 vale la pena?</div>
+        <div class="faq-a">Si tienes una piscina grande (+150 m²) y quieres tecnología punta, sí. Sus 4 horas de autonomía, limpieza de superficie y aparcamiento automático son únicos en su rango. Para piscinas medianas, el Aiper o Wybot ofrecen mejor relación calidad-precio.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Funcionan en piscinas desmontables o hinchables?</div>
+        <div class="faq-a">Sí, pero hay que elegir el modelo correcto. El CoasTeering Planet Pro está diseñado específicamente para piscinas elevadas con fondo plano. Evita robots con cepillos agresivos en piscinas de liner fino.</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ARTICLES -->
-<section class="articles-section" id="articulos">
-  <div class="section-label">Guías en profundidad</div>
-  <h2 class="section-title">Artículos que realmente ayudan</h2>
-  <p class="section-intro">Sin relleno SEO. Solo contenido que responde preguntas reales.</p>
-
-  <div class="article-cards">
-    <a href="mejor-robot-piscina-2026.html" class="article-card">
-      <div class="article-card-img">🏆</div>
-      <div class="article-card-body">
-        <span class="article-card-tag">Guía completa</span>
-        <div class="article-card-title">Mejor robot piscina 2026: la guía que ojalá hubiera tenido antes</div>
-        <div class="article-card-desc">Qué compraría yo, qué no, trucos que nadie cuenta y comparativa honesta de los modelos más vendidos.</div>
-        <span class="article-card-link">Leer artículo →</span>
-      </div>
-    </a>
-    <a href="robot-piscina-sin-cable-2026.html" class="article-card">
-      <div class="article-card-img">🔋</div>
-      <div class="article-card-body">
-        <span class="article-card-tag">Sin cable</span>
-        <div class="article-card-title">Robot piscina sin cable 2026: todo lo que nadie te explica</div>
-        <div class="article-card-desc">¿Limpia paredes? ¿Qué pasa con escalones y piscinas redondas? Las preguntas reales con respuestas directas.</div>
-        <span class="article-card-link">Leer artículo →</span>
-      </div>
-    </a>
-    <a href="robot-piscina-barato-2026.html" class="article-card">
-      <div class="article-card-img">💸</div>
-      <div class="article-card-body">
-        <span class="article-card-tag">Presupuesto ajustado</span>
-        <div class="article-card-title">Robot piscina barato 2026: los mejores por menos de 300€</div>
-        <div class="article-card-desc">Qué merece la pena, qué es una trampa y por qué gastar menos de 100€ casi siempre sale caro.</div>
-        <span class="article-card-link">Leer artículo →</span>
-      </div>
-    </a>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer>
-  <p><strong style="color:white;">RobotsPiscinas.es</strong> · Comparativas honestas de robots limpiafondos en España</p>
-  <p style="margin-top:.5rem"><a href="index.html">Inicio</a> · <a href="robots.html">Fichas detalladas</a> · <a href="#articulos">Artículos</a> · <a href="#faq">FAQ</a></p>
-  <div class="footer-disclaimer">RobotsPiscinas.es participa en el Programa de Afiliados de Amazon EU. Los precios son orientativos y pueden variar. Consulta siempre el precio actual en Amazon antes de comprar.</div>
+  <strong>🤖 RobotsPiscina.es</strong>
+  Guía independiente de robots limpiafondos para piscinas en España.<br>
+  <a href="#">Política de privacidad</a> · <a href="#">Aviso legal</a> · <a href="#">Cookies</a> · <a href="#">Contacto</a>
+  <div class="affiliate-notice">
+    Como afiliados de Amazon obtenemos una pequeña comisión por las compras realizadas a través de nuestros enlaces, sin ningún coste adicional para ti. Esto nos permite mantener esta guía actualizada de forma independiente.
+  </div>
+  <br>© 2026 RobotsPiscina.es — Todos los derechos reservados
 </footer>
 
+<script>
+  document.querySelectorAll('.faq-q').forEach(q=>{
+    q.addEventListener('click',()=>q.parentElement.classList.toggle('open'));
+  });
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach((e,i)=>{
+      if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*70);obs.unobserve(e.target);}
+    });
+  },{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(r=>obs.observe(r));
+</script>
 </body>
 </html>
