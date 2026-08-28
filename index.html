@@ -142,6 +142,17 @@
     footer a{color:var(--cyan);text-decoration:none}
     .affiliate-notice{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:1rem 1.5rem;max-width:640px;margin:1.5rem auto 0;font-size:.8rem;line-height:1.6}
 
+    /* COOKIE BANNER */
+    #cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--blue-deep);color:rgba(255,255,255,.85);padding:1.2rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,.3);transform:translateY(100%);transition:transform .4s ease}
+    #cookie-banner.show{transform:translateY(0)}
+    #cookie-banner p{font-size:.85rem;line-height:1.5;flex:1;min-width:200px}
+    #cookie-banner a{color:var(--cyan)}
+    .cookie-btns{display:flex;gap:.7rem;flex-shrink:0}
+    .btn-accept{background:var(--gold);color:var(--blue-deep);border:none;padding:.6rem 1.4rem;border-radius:50px;font-weight:700;font-size:.88rem;cursor:pointer;transition:background .2s}
+    .btn-accept:hover{background:#e08e00}
+    .btn-reject{background:transparent;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.3);padding:.6rem 1.2rem;border-radius:50px;font-weight:600;font-size:.88rem;cursor:pointer;transition:all .2s}
+    .btn-reject:hover{border-color:rgba(255,255,255,.6);color:#fff}
+
     @keyframes fadeDown{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)}}
     .reveal{opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s ease}
     .reveal.visible{opacity:1;transform:none}
@@ -456,14 +467,43 @@
 <footer>
   <strong>🤖 RobotsPiscina.es</strong>
   Guía independiente de robots limpiafondos para piscinas en España.<br>
-  <a href="#">Política de privacidad</a> · <a href="#">Aviso legal</a> · <a href="#">Cookies</a> · <a href="#">Contacto</a>
+  <a href="privacidad.html">Política de privacidad</a> · <a href="aviso-legal.html">Aviso legal</a> · <a href="cookies.html">Cookies</a> · <a href="mailto:maurojmiralles@gmail.com">Contacto</a>
   <div class="affiliate-notice">
     Como afiliados de Amazon obtenemos una pequeña comisión por las compras realizadas a través de nuestros enlaces, sin ningún coste adicional para ti. Esto nos permite mantener esta guía actualizada de forma independiente.
   </div>
   <br>© 2026 RobotsPiscina.es — Todos los derechos reservados
 </footer>
 
+<!-- COOKIE BANNER -->
+<div id="cookie-banner">
+  <p>🍪 Usamos cookies propias y de terceros (Google Analytics, Amazon) para analizar el tráfico y gestionar los enlaces de afiliado. Puedes aceptar, rechazar o consultar nuestra <a href="cookies.html">política de cookies</a>.</p>
+  <div class="cookie-btns">
+    <button class="btn-reject" onclick="rejectCookies()">Solo necesarias</button>
+    <button class="btn-accept" onclick="acceptCookies()">Aceptar todo</button>
+  </div>
+</div>
+
 <script>
+  // Cookie banner
+  function setCookie(name,value,days){
+    const d=new Date();d.setTime(d.getTime()+(days*24*60*60*1000));
+    document.cookie=name+'='+value+';expires='+d.toUTCString()+';path=/';
+  }
+  function getCookie(name){
+    const ca=document.cookie.split(';');
+    for(let c of ca){const cv=c.trim();if(cv.startsWith(name+'='))return cv.substring(name.length+1);}
+    return null;
+  }
+  function acceptCookies(){setCookie('cookie_consent','accepted',365);hideBanner();}
+  function rejectCookies(){setCookie('cookie_consent','rejected',365);hideBanner();}
+  function hideBanner(){document.getElementById('cookie-banner').classList.remove('show');}
+
+  window.addEventListener('load',()=>{
+    if(!getCookie('cookie_consent')){
+      setTimeout(()=>document.getElementById('cookie-banner').classList.add('show'),800);
+    }
+  });
+
   document.querySelectorAll('.faq-q').forEach(q=>{
     q.addEventListener('click',()=>q.parentElement.classList.toggle('open'));
   });
